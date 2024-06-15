@@ -1,0 +1,16 @@
+{
+  "name": "manual",
+  "scripts": {
+    "start": "docsify start .",
+    "serve": "docsify serve ."
+  },
+  "files": [
+  ],
+  "docsify": {
+    "config": {
+    }
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}
