@@ -1,35 +1,35 @@
 # 技術能力
 
-## フロントエンド開発チーム
-- [x] Vue.js 
+## フロントエンド開発グループ
+- [x] Vue.js
 - [x] JavaScript
 - [x] WebSocket
-- [x] iOS（フロントエンド開発に関連する可能性あり） 
-- [x] Android（フロントエンド開発に関連する可能性あり）
+- [x] iOS
+- [x] Android
 - [x] Flutter
 
-## バックエンド開発チーム
+## バックエンド開発グループ
 - [x] PHP
-- [x] Java（サーバー）
+- [x] Java (Server)
 - [x] Node.js
-- [x] Golang 
+- [x] Golang
 - [x] Python
-- [x] Ruby & Rails 
 - [x] C#
 
-## データ管理部
-- [x] RDB（関係データベース） 
-- [x] BSE（大規模データベースまたは企業向けデータベースシステムを指す可能性あり）
 
-## インフラ管理部
-- [x] AWS 
-- [x] Terraform 
+## データデザイングループ
+- [x] RDB (リレーショナルデータベース)
+- [x] NoSQL(非リレーショナルデータベース)
+
+## 基インフラ管理グループ
+- [x] AWS
+- [x] Terraform
 - [x] Docker
-- [x] テストチーム： 
-- [x] テスト 
-- [x] Selenium 
+
+## テストグループ
+- [x] 非自動化テスト
+- [x] Selenium
 - [x] JMeter
 
-## プロジェクト管理オフィス
-- [x] プロジェクト管理 
-- [x] Docker（デプロイツールとしても考えられる）
+## プロジェクト管理オフェンス
+- [x] プロジェクト管理
