@@ -13,7 +13,7 @@
 <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '成都雷耳兎科技有限公司',
+      name: ' ',
       repo: '',
 
       subMaxLevel: 3,
@@ -27,6 +27,22 @@
       // coverpage: true,
 
       auto2top: true,
+
+      plugins: [
+        function(hook, vm) {
+
+          hook.doneEach(function() {
+            // 确保在每次路由变更后更新页面标题
+            var lang = vm.route.path.split('/')[1];
+            var title = document.querySelector('.app-name-link');
+            if (lang === 'zh-cn') {
+              title.innerText = '成都雷耳兔科技有限公司';
+            } else {
+              title.innerText = '成都雷耳兎科技有限公司';
+            }
+          });
+        }
+      ]
 
     }
   </script>
