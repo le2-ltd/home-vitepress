@@ -41,6 +41,15 @@
               title.innerText = '成都雷耳兎科技有限公司';
             }
           });
+
+          hook.beforeEach(function (html) {
+              // var editHtml = '[:memo: Edit Document](' + url + ')\n';
+              return (
+                html +
+                '\n\n----\n\n' +
+                '© 2021-2024 Le2.ltd 版权所有 <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2024116916号-1</a>'
+              );
+            })
         }
       ]
 
@@ -51,6 +60,6 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
   <!--导航 -->
-
+  <div>fdsf</div>
 </body>
 </html>
