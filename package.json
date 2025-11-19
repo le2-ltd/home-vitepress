@@ -1,16 +1,19 @@
 {
-  "name": "le2",
+  "name": "home-vitepress",
   "scripts": {
-    "start": "docsify start .",
-    "serve": "docsify serve ."
-  },
-  "files": [
-  ],
-  "docsify": {
-    "config": {
-    }
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "docsify-cli": "^4.4.4"
+    "@braintree/sanitize-url": "^7.1.1",
+    "cytoscape": "^3.33.1",
+    "cytoscape-cose-bilkent": "^4.1.0",
+    "dayjs": "^1.11.19",
+    "debug": "^4.4.3",
+    "markdown-it-mermaid": "^0.2.5",
+    "mermaid": "^11.12.1",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
   }
 }

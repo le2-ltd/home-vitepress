@@ -1,5 +1,6 @@
-.idea/
-
-node_modules
-
-.vscode/extensions.json
+node_modules/
+.project
+unpackage/
+.DS_Store
+.vitepress/cache/
+.vitepress/dist/
