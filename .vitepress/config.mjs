@@ -7,7 +7,7 @@ export default defineConfig({
   rewrites: {
     // 左边：真实存在的文件路径（相对 srcDir）
     // 右边：希望它在站点中对应的“虚拟路径”
-    "aboutus.md": "index.md",
+    // "aboutus.md": "index.md",
   },
   // head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   markdown: {
@@ -58,7 +58,7 @@ export default defineConfig({
         items: [
           {
             text: "关于我们",
-            link: "/index",
+            link: "/",
           },
           {
             text: "技能能力",
