@@ -3,7 +3,11 @@ ARG IMAGE_EXT_PREFIX
 
 FROM ${IMAGE_EXT_PREFIX}node-alpine AS builder
 
-RUN npm config set registry https://registry.npmmirror.com
+ARG APP_ENV
+
+RUN if [ "$APP_ENV" = "dev" ]; then \
+    npm config set registry https://registry.npmmirror.com; \
+    fi
 
 RUN npm install -g pnpm
 
@@ -18,8 +22,6 @@ RUN --mount=type=cache,id=pnpm,target=/root/.local/share/pnpm/store \
 COPY . .
 
 RUN pnpm run docs:build
-
-# RUN du -sh /app/.vitepress/dist
 
 FROM ${IMAGE_PREFIX}nginx:latest
 
