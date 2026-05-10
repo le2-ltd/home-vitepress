@@ -73,7 +73,6 @@ jobs:
                   context: .
                   file: ./Dockerfile
                   build-args: |
-                      IMAGE_PREFIX=
                       APP_ENV=production
                   platforms: ${{ matrix.platform }} # 原生构建，无 QEMU
                   push: ${{ github.event_name != 'pull_request' }}
