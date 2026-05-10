@@ -1,5 +1,5 @@
-include .env
-include .env.$(APP_ENV)
+-include .env
+-include .env.$(APP_ENV)
 
 run-dev:
 	npm config set registry $(NPM_REGISTRY)
