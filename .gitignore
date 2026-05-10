@@ -5,3 +5,4 @@ unpackage/
 .vitepress/cache/
 .vitepress/dist/
 docs/.vitepress/cache/
+.env

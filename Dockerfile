@@ -2,19 +2,20 @@ ARG IMAGE_MIRROR
 
 FROM ${IMAGE_MIRROR}node:alpine AS builder
 
-ARG APP_ENV
+ARG APK_REPOSITORY
+ARG NPM_REGISTRY
 
-RUN if [ "$APP_ENV" = "development" ]; then \
+RUN if [ -n "$APK_REPOSITORY" ]; then \
         sed -i \
-            -e "s|https://dl-cdn.alpinelinux.org/alpine|http://mirrors.aliyun.com/alpine|g" \
-            -e "s|http://dl-cdn.alpinelinux.org/alpine|http://mirrors.aliyun.com/alpine|g" \
+            -e "s|https://dl-cdn.alpinelinux.org/alpine|$APK_REPOSITORY|g" \
+            -e "s|http://dl-cdn.alpinelinux.org/alpine|$APK_REPOSITORY|g" \
             /etc/apk/repositories; \
     fi
 
 RUN apk add --no-cache git ca-certificates;
 
-RUN if [ "$APP_ENV" = "development" ]; then \
-        npm config set registry https://registry.npmmirror.com; \
+RUN if [ -n "$NPM_REGISTRY" ]; then \
+        npm config set registry "$NPM_REGISTRY"; \
     fi
 
 RUN npm install -g pnpm
